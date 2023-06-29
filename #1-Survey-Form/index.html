@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>Formulario de encuesta</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Formulario de encuesta freeCodeCamp</h1>
+        <p id="description">Muchas gracias por tomarte el tiempo para ayudar a mejorar la plataforma</p>
+        <main>
+            <form action="" id="survey-form">
+                <div class="form-group"> 
+                    <label id="name-label" for="name">Nombre</label>
+                    <input placeholder="Ingresá tu nombre" id="name" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email </label>
+                    <input placeholder="Ingresá tu Email" id="email" type="email" required>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Edad <em class="mini">(opcional)</em></label>
+                    <input placeholder="Edad" name="age" type="number" id="number" min="13" max="100">
+                </div>
+                <div class="form-group">
+                    <label for="dropdown">¿Que opción describe tu rol actual?</label>
+                    <select id="dropdown">
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="1">Estudiante</option>
+                        <option value="2">Trabajo Full Time</option>
+                        <option value="3">Estudiante Full Time</option>
+                        <option value="4">Prefiero no responder</option>
+                        <option value="5">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">¿Recomendarias freeCodeCamp a un amigo?</label>
+                    <div class="radio-container">
+                        <label><input name="user-recommend" id="definitly" class="input-radio" value="definitly" type="radio">Definitivamente</label>
+                        <label><input name="user-recommend" id="maybe" class="input-radio" value="maybe" type="radio">Quizás</label>
+                        <label><input name="user-recommend" id="notsure" class="input-radio" value="notsure" type="radio">No estoy seguro</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>¿Cuál es tu certificación favorita? <em class="mini">(Elige cuantas quieras)</em></label>
+                    <div class="checkbox-container">
+                        <label><input type="checkbox" name="ResponsiveWebDesign" value="ResponsiveWebDesign"> Responsive Web Design Certification</label>
+                        <label><input type="checkbox" name="JSAlgorithm" value="JSAlgorithm"> JavaScript Algorithms and Data Structures Certification</label>
+                        <label><input type="checkbox" name="FrontEnd" value="FrontEnd"> Front End Development Libraries Certification</label>
+                        <label><input type="checkbox" name="DataVisualization" value="DataVisualization"> Data Visualization Certification</label>
+                        <label><input type="checkbox" name="RelationalDatabase" value="RelationalDatabase"> Relational Database Certification</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="suggestion">Si tienes cualquier sugerencia puedes agregarla aquí.
+                        <textarea placeholder="Ingresa tu comentario aquí" name="suggestion" id="suggestion"></textarea>
+                    </label>
+                </div>
+                <button type="submit" id="submit">Enviar</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
